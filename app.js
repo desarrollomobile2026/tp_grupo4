@@ -168,7 +168,7 @@ function verDetalle(id, nombre, precio, foto_url, descripcion, likes) {
     const descElement = document.querySelector(".descripcion");
     if (descElement) descElement.innerText = descripcion || "Sin descripción disponible.";
 
-    if (btnLike) btnLike.innerText = (likes > 0) ? "❤️ " + likes : "🤍";
+    if (btnLike) btnLike.innerText = (likes > 0) ? "❤️ " + likes : "💚";
     modal.style.display = "flex";
 }
 
