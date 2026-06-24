@@ -36,15 +36,19 @@ function cambiarPantalla(pantalla) {
 
     switch (pantalla) {
         case 'inicio':
-            tituloApp.innerText = "Mi Tienda";
+            tituloApp.innerText = "Pet Mellis";
             if (buscador) buscador.value = "";
             break;
         case 'productos':
             tituloApp.innerText = "Todos los productos";
             cargarProductos(); 
             break;
+            case 'Notificaciones':
+            tituloApp.innerText = "Notificaciones";
+            cargarProductos(); 
+            break;
         case 'favoritos':
-            tituloApp.innerText = "Mis Favoritos ❤️";
+            tituloApp.innerText = "Mis Favoritos 💚";
             cargarProductos("favoritos");
             break;
         case 'carrito':

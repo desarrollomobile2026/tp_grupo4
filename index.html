@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi App Dinámica</title>
+    <title>Pet Mellis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +11,9 @@
     <div class="app-container">
         
        <nav class="app-bar">
-    <div class="user-profile">🛍️</div> 
-    <h1 id="titulo-app">Mi Tienda</h1>
-    <div class="cart-icon" onclick="cambiarPantalla('carrito')" style="cursor:pointer;">🛒</div>
+    <div class="user-profile" onclick="cambiarPantalla('perfil')">🛍️</div> 
+    <h1 id="titulo-app">Pet Mellis</h1>
+    <div class="cart-icon" onclick="cambiarPantalla('notificaciones')" style="cursor:pointer;">🔔</div>
 </nav>
 
         <div class="search-container">
@@ -23,25 +23,25 @@
         <div id="view-inicio" class="app-view">
             <section class="banner-container">
                 <div class="banner-slider">
-                    <div class="banner-item" style="background-color: #ff9900;">¡Ofertas de Invierno! ❄️</div>
+                    <div class="banner-item" style="background-color: #ffe600;">¡Ofertas de Invierno! ❄️</div>
                     <div class="banner-item" style="background-color: #1a73e8;">Envíos gratis 🚚</div>
                     <div class="banner-item" style="background-color: #34a853;">3 Cuotas sin interés 💳</div>
                 </div>
             </section>
 
             <section class="seccion-categorias">
-                <h2 class="subtitulo">Categorías</h2>
+                <h2 class="subtitulo">Catálogo</h2>
                 <div class="categorias-grid">
-    <div class="cat-item" onclick="filtrarCategoria('calzado')">👟<span>Calzado</span></div>
-    <div class="cat-item" onclick="filtrarCategoria('ropa')">👕<span>Ropa</span></div>
-    <div class="cat-item" onclick="filtrarCategoria('gorras')">🧢<span>Gorras</span></div>
-    <div class="cat-item" onclick="filtrarCategoria('accesorios')">🎒<span>Accesorios</span></div>
-    <div class="cat-item" onclick="filtrarCategoria('equipamiento')">⚽<span>Equipos</span></div>
+    <div class="cat-item" onclick="filtrarCategoria('Balanceado')">🦴<span>Balanceado</span></div>
+    <div class="cat-item" onclick="filtrarCategoria('Collares')">📿<span>Collares</span></div>
+    <div class="cat-item" onclick="filtrarCategoria('Shampoo')">🧴<span>Shampoo</span></div>
+    <div class="cat-item" onclick="filtrarCategoria('Accesorios')">🎒<span>Accesorios</span></div>
+    <div class="cat-item" onclick="filtrarCategoria('Ropa')">👕<span>Ropa</span></div>
 </div>
             </section>
 
             <section class="seccion-destacados">
-                <h2 class="subtitulo">Lo más buscado 🔥</h2>
+                <h2 class="subtitulo">Lo más destacado 🔥</h2>
                 <div id="contenedor-destacados"></div>
             </section>
         </div>
@@ -60,9 +60,9 @@
             </div>
         </div> <nav class="bottom-nav">
             <div class="nav-item active" onclick="cambiarPantalla('inicio')">🏠<span>Inicio</span></div>
-            <div class="nav-item" onclick="cambiarPantalla('productos')">👟<span>Productos</span></div>
-            <div class="nav-item" onclick="cambiarPantalla('favoritos')">❤️<span>Favs</span></div>
-            <div class="nav-item">⚙️<span>Ajustes</span></div>
+            <div class="nav-item" onclick="cambiarPantalla('productos')">🎒<span>Productos</span></div>
+            <div class="nav-item" onclick="cambiarPantalla('carrito')">🛒<span>Carrito</span></div>
+            <div class="nav-item" onclick="cambiarPantalla('ajustes')">⚙️<span>Ajustes</span></div>
         </nav>
 
         <div id="modal-detalle" class="modal">
@@ -90,11 +90,11 @@
                     <input type="number" id="add-precio" class="input-form" placeholder="Precio (ej: 15000)">
                     
                    <select id="add-categoria" class="input-form">
-    <option value="calzado">👟 Calzado</option>
-    <option value="ropa">👕 Ropa</option>
-    <option value="gorras">🧢 Gorras</option>
+    <option value="calzado">🦴 Balanceado</option>
+    <option value="ropa">📿 Collares</option>
+    <option value="gorras">🧴 Shampoo</option>
     <option value="accesorios">🎒 Accesorios</option>
-    <option value="equipamiento">⚽ Equipamiento</option>
+    <option value="equipamiento">👕 Ropa</option>
 </select>
 
                     <input type="text" id="add-foto" class="input-form" placeholder="URL de la imagen (Link)">

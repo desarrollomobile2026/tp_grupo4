@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #0f0f0f;
     z-index: 1000;
 }
 
@@ -60,7 +60,7 @@ body {
     color: #888;
 }
 
-.nav-item.active { color: #1a73e8; font-weight: bold; }
+.nav-item.active { color: #0d0e0d; font-weight: bold; }
 
 /* 3. BANNER ANIMADO */
 .banner-container {
@@ -84,7 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(12, 12, 12);
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
@@ -109,7 +109,7 @@ body {
 
 .card {
     width: 100%;
-    background: white;
+    background: rgb(2, 118, 250);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -126,14 +126,14 @@ body {
 .card-info h3 {
     margin: 0;
     font-size: 0.85rem;
-    color: #333;
+    color: #e0dede;
     height: 32px; /* Mantiene el texto alineado si es muy largo */
     overflow: hidden;
 }
 
 .card-info p {
     margin: 5px 0 0 0;
-    color: #1a73e8;
+    color: #3262fd;
     font-weight: bold;
 }
 
@@ -319,7 +319,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(10, 10, 10, 0.05);
 }
 
 .item-carrito img {
@@ -330,7 +330,7 @@ body {
 }
 
 .btn-eliminar {
-    background: #ff4757;
+    background: #faf9f9;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -408,7 +408,7 @@ body {
 }
 
 .btn-borrar-db:hover {
-    background-color: #ff4757;
+    background-color: #0f0f0f;
 }
 
 .btn-borrar-db:active {
@@ -431,7 +431,7 @@ body {
 .badge-likes {
     font-size: 0.8rem; 
     font-weight: bold; 
-    color: #e91e63;
+    color: #1ee94a;
 }
 .carrito-vacio-msg {
     text-align: center; 
