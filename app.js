@@ -48,7 +48,7 @@ function cambiarPantalla(pantalla) {
             cargarProductos(); 
             break;
         case 'favoritos':
-            tituloApp.innerText = "Mis Favoritos 💚";
+            tituloApp.innerText = "Mis Favoritos 🤍";
             cargarProductos("favoritos");
             break;
         case 'carrito':
