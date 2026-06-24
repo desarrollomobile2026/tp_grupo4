@@ -102,3 +102,62 @@ Nota: esta actividad se enfoca en la adaptación del diseño y del contenido del
 - Calidad de experiencia de usuario en mobile.
 - Claridad de estructura y mantenibilidad del código.
 - Adaptación correcta al dominio elegido (productos o servicios).
+
+/*Codigo Html para configuración*/
+              <div id="view-ajustes" class="app-view" style="display: none;">
+            <h2 class="subtitulo">Configuración ⚙️</h2>
+            <id="seccion-ajustes" class="oculto">
+              <div class="menu-opciones">
+      <button class="opcion-item">
+        <div class="opcion-izquierda">
+          <div class="icono-contenedor azul-claro">🔔</div>
+          <span>Notificaciones</span>
+        </div>
+      </button>
+
+      <button class="opcion-item">
+        <div class="opcion-izquierda">
+          <div class="icono-contenedor azul-claro">🛡️</div>
+          <span>Seguridad</span>
+        </div>
+      </button>
+
+      <button class="opcion-item">
+        <div class="opcion-izquierda">
+          <div class="icono-contenedor azul-claro">⚙️</div>
+          <span>Soporte</span>
+        </div>
+      </button>
+  </div>
+/*Codigo Css para configuración*/
+
+/* Listado de Opciones */
+.menu-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+.opcion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 14px 18px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: transform 0.1s;
+}
+.opcion-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}/* Ajuste de tamaño y estilo del texto dentro de la opción */
+.opcion-izquierda span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}

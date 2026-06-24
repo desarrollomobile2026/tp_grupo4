@@ -1,7 +1,7 @@
 /* 1. RESET Y ESTRUCTURA BASE */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #f0f5f1;
     margin: 0;
     padding: 0;
     display: flex;
@@ -44,31 +44,35 @@ body {
     width: 100%;
     max-width: 450px;
     height: 65px;
-    background: white;
+    background: #ffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid #0f0f0f;
+    border-top: 3px solid #607D8B;
     z-index: 1000;
+    
 }
 
 .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.7rem;
-    color: #888;
+    font-size: 1.1rem;
+    color: #3051Ad;font-weight: bold;
+    border-radius: 10px;
+    border-top: 5px solid #3051Ad;
+
 }
 
-.nav-item.active { color: #0d0e0d; font-weight: bold; }
+.nav-item.active { color: #3051Ad; font-weight: bold; }
 
 /* 3. BANNER ANIMADO */
 .banner-container {
-    width: 92%; /* Para que tenga margen a los costados */
-    height: 100px;
+    width: 95%; /* Para que tenga margen a los costados */
+    height: 110px;
     overflow: hidden;
     margin: 20px auto; /* Lo centra solo */
-    border-radius: 12px;
+    border-radius: 40px;
     flex-shrink: 0;
 }
 
@@ -76,7 +80,7 @@ body {
     display: flex;
     width: 300%;
     height: 100%;
-    animation: slide 12s infinite ease-in-out;
+    animation: slide 10s infinite ease-in-out;
 }
 
 .banner-item {
@@ -84,7 +88,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(12, 12, 12);
+    color: rgba(245, 247, 246, 0.904);
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
@@ -109,7 +113,7 @@ body {
 
 .card {
     width: 100%;
-    background: rgb(2, 118, 250);
+    background: #3051Ad;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -133,7 +137,7 @@ body {
 
 .card-info p {
     margin: 5px 0 0 0;
-    color: #3262fd;
+    color: #ffff;
     font-weight: bold;
 }
 
@@ -209,7 +213,7 @@ body {
 .btn-comprar {
     width: 100%;
     padding: 15px;
-    background-color: #1a73e8;
+    background-color:#3051Ad;
     color: white;
     border: none;
     border-radius: 10px;
@@ -242,7 +246,9 @@ body {
     flex-wrap: wrap; /* Esencial para que entren los 5 grupos bien */
     gap: 10px;
     padding: 10px 5px 30px 5px;
-    background: white;
+    background: #3051Ad;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .cat-item {
@@ -266,9 +272,9 @@ body {
 .cat-item span {
     position: absolute;
     bottom: -25px; /* Posiciona el texto justo debajo del círculo */
-    font-size: 0.75rem;
+    font-size: 0.75rem; 
     font-weight: 600;
-    color: #555;
+    color: #ffff;
     white-space: nowrap; /* Evita que las palabras se corten en dos líneas */
 }
 
@@ -300,7 +306,7 @@ body {
 #input-buscador {
     width: 100%;
     padding: 12px 20px;
-    border: 2px solid #f1f3f4;
+    border: 3px solid #3051Ad;
     border-radius: 25px;
     outline: none;
     font-size: 1rem;
@@ -309,7 +315,7 @@ body {
 }
 
 #input-buscador:focus {
-    border-color: #1a73e8;
+    border-color: #f2f5f3;
 }
 .item-carrito {
     display: flex;
@@ -346,7 +352,7 @@ body {
     margin-left: 150px; /* ¡La magia! Lo mantiene adentro del celular de 450px */
     width: 55px;
     height: 55px;
-    background-color: #1a73e8;
+    background-color: #3051Ad;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -381,7 +387,7 @@ body {
 
 .input-form:focus {
     outline: none;
-    border-color: #1a73e8;
+    border-color: #3051Ad;
 }
 /* --- BOTÓN DE BORRAR EN LA TARJETA --- */
 .card-img-container {
@@ -418,7 +424,7 @@ body {
 /* Correcciones estéticas de UI limpia */
 .sin-datos, .destacados-vacios {
     padding: 15px; 
-    color: #777; 
+    color: #ffff; 
     font-size: 0.9rem; 
     text-align: center;
     grid-column: span 2;
@@ -443,5 +449,5 @@ body {
     margin-left: 10px;
 }
 .item-carrito-desc h4 { margin:0; font-size: 0.9rem; }
-.item-carrito-desc p { margin:0; font-size: 0.8rem; color: #1a73e8; font-weight: bold; }
+.item-carrito-desc p { margin:0; font-size: 0.8rem; color: #3051Ad; font-weight: bold; }
 .btn-eliminar-item { background: none; border: none; cursor: pointer; font-size: 1.1rem; }
