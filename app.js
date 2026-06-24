@@ -36,15 +36,19 @@ function cambiarPantalla(pantalla) {
 
     switch (pantalla) {
         case 'inicio':
-            tituloApp.innerText = "Mi Tienda";
+            tituloApp.innerText = "Pet Mellis";
             if (buscador) buscador.value = "";
             break;
         case 'productos':
             tituloApp.innerText = "Todos los productos";
             cargarProductos(); 
             break;
+            case 'Notificaciones':
+            tituloApp.innerText = "Notificaciones";
+            cargarProductos(); 
+            break;
         case 'favoritos':
-            tituloApp.innerText = "Mis Favoritos ❤️";
+            tituloApp.innerText = "Mis Favoritos 💚";
             cargarProductos("favoritos");
             break;
         case 'carrito':
@@ -164,7 +168,7 @@ function verDetalle(id, nombre, precio, foto_url, descripcion, likes) {
     const descElement = document.querySelector(".descripcion");
     if (descElement) descElement.innerText = descripcion || "Sin descripción disponible.";
 
-    if (btnLike) btnLike.innerText = (likes > 0) ? "❤️ " + likes : "🤍";
+    if (btnLike) btnLike.innerText = (likes > 0) ? "❤️ " + likes : "💚";
     modal.style.display = "flex";
 }
 

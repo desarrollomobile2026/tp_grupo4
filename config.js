@@ -1,9 +1,9 @@
 // config.js - Archivo de configuración local (Excluido de Git por seguridad)
 const firebaseConfig = {
-    apiKey: "AIzaSyBR469f8QnBVG9p6TXVvNMYjfxk2SxPlm4",
-    authDomain: "app-clase-sebastian.firebaseapp.com",
-    projectId: "app-clase-sebastian",
-    storageBucket: "app-clase-sebastian.firebasestorage.app",
-    messagingSenderId: "495895860460",
-    appId: "1:495895860460:web:712a30fa4ab544aa2841c9"
+  apiKey: "AIzaSyD3AGd_E-VNm0KyT-2BqePDaXidb9_E1zQ",
+  authDomain: "pet-mellis-b5a02.firebaseapp.com",
+  projectId: "pet-mellis-b5a02",
+  storageBucket: "pet-mellis-b5a02.firebasestorage.app",
+  messagingSenderId: "606825084286",
+  appId: "1:606825084286:web:a1c73867369297bb976f2f"
 };
