@@ -104,31 +104,32 @@ Nota: esta actividad se enfoca en la adaptación del diseño y del contenido del
 - Adaptación correcta al dominio elegido (productos o servicios).
 
 /*Codigo Html para configuración*/
-              <div id="view-ajustes" class="app-view" style="display: none;">
-            <h2 class="subtitulo">Configuración ⚙️</h2>
-            <id="seccion-ajustes" class="oculto">
-              <div class="menu-opciones">
-      <button class="opcion-item">
-        <div class="opcion-izquierda">
-          <div class="icono-contenedor azul-claro">🔔</div>
-          <span>Notificaciones</span>
-        </div>
-      </button>
+ <div id="view-ajustes" class="app-view" style="display: none;">
+  <h2 class="subtitulo">Configuración ⚙️</h2>
+  
+  <div class="menu-opciones">
+    <button class="opcion-item">
+      <div class="opcion-izquierda">
+        <div class="icono-contenedor azul-claro">🔔</div>
+        <span>Notificaciones</span>
+      </div>
+    </button>
 
-      <button class="opcion-item">
-        <div class="opcion-izquierda">
-          <div class="icono-contenedor azul-claro">🛡️</div>
-          <span>Seguridad</span>
-        </div>
-      </button>
+    <button class="opcion-item">
+      <div class="opcion-izquierda">
+        <div class="icono-contenedor azul-claro">🛡️</div>
+        <span>Seguridad</span>
+      </div>
+    </button>
 
-      <button class="opcion-item">
-        <div class="opcion-izquierda">
-          <div class="icono-contenedor azul-claro">⚙️</div>
-          <span>Soporte</span>
-        </div>
-      </button>
+    <button class="opcion-item">
+      <div class="opcion-izquierda">
+        <div class="icono-contenedor azul-claro">⚙️</div>
+        <span>Soporte</span>
+      </div>
+    </button>
   </div>
+</div>
 /*Codigo Css para configuración*/
 
 /* Listado de Opciones */
