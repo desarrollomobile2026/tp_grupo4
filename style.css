@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 3px solid #607D8B;
+    border-top: 3px solid #01121b;
     z-index: 1000;
     
 }
@@ -145,13 +145,25 @@ body {
 .user-profile {
     width: 40px; /* Lo agrandamos un poquito */
     height: 40px;
-    background-color: #f0f2f5; /* Un gris más suave */
+    background-color: #FFC107; /* Un gris más suave */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem; /* Tamaño del emoji */
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.1); /* Efecto hundido */
+    box-shadow: inset 0 0 5px rgba(250, 1, 1, 0.1); /* Efecto hundido */
+}
+
+.cart-icon {
+width: 40px; /* Lo agrandamos un poquito */
+    height: 40px;
+    background-color: #3051Ad; /* Un gris más suave */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* Tamaño del emoji */
+    box-shadow: inset 0 0 5px rgba(250, 1, 1, 0.1); /* Efecto hundido */    
 }
 
 .skeleton-card {
@@ -292,7 +304,7 @@ body {
 }
 
 #contenedor-destacados .card {
-    min-width: 250px; /* Tarjetas más anchas para el inicio */
+    min-width: 200px; /* Tarjetas más anchas para el inicio */
     scroll-snap-align: center;
 }
 .search-container {
@@ -315,7 +327,7 @@ body {
 }
 
 #input-buscador:focus {
-    border-color: #f2f5f3;
+    border-color: #FFC107;
 }
 .item-carrito {
     display: flex;
@@ -378,7 +390,7 @@ body {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #3051Ad;
     border-radius: 8px;
     box-sizing: border-box;
     font-family: inherit;
@@ -387,7 +399,7 @@ body {
 
 .input-form:focus {
     outline: none;
-    border-color: #3051Ad;
+    border-color: #FFC107;
 }
 /* --- BOTÓN DE BORRAR EN LA TARJETA --- */
 .card-img-container {
@@ -414,7 +426,7 @@ body {
 }
 
 .btn-borrar-db:hover {
-    background-color: #0f0f0f;
+    background-color: #FFC107;
 }
 
 .btn-borrar-db:active {
@@ -448,6 +460,6 @@ body {
     flex-grow: 1; 
     margin-left: 10px;
 }
-.item-carrito-desc h4 { margin:0; font-size: 0.9rem; }
-.item-carrito-desc p { margin:0; font-size: 0.8rem; color: #3051Ad; font-weight: bold; }
+.item-carrito-desc h4 { margin:0; font-size: 1.1rem; }
+.item-carrito-desc p { margin:0; font-size: 1.0rem; color: #3051Ad; font-weight: bold; }
 .btn-eliminar-item { background: none; border: none; cursor: pointer; font-size: 1.1rem; }
