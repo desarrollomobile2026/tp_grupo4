@@ -22,7 +22,7 @@ let categoriaActual = null;
 
 // 3. CONTROL DE VISTAS (Navegación SPA)
 function cambiarPantalla(pantalla) {
-    const vistas = ['inicio', 'productos', 'carrito'];
+    const vistas = ['inicio', 'productos', 'carrito','ajustes'];
     vistas.forEach(v => {
         const viewEl = document.getElementById(`view-${v}`);
         if (viewEl) viewEl.style.display = 'none';
@@ -54,6 +54,10 @@ function cambiarPantalla(pantalla) {
         case 'carrito':
             tituloApp.innerText = "Mi Carrito";
             actualizarVistaCarrito();
+            break;
+             case 'ajustes':
+            tituloApp.innerText = "ajustes";
+            actualizarVistaAjustes();
             break;
     }
 }
@@ -317,3 +321,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarProductos();
     cargarDestacados();
 });
+
+{document.querySelector('.menu-opciones').classList.add('activo');
+document.querySelector('.menu-opciones').classList.remove('activo');}

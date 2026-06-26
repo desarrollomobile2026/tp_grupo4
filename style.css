@@ -463,3 +463,35 @@ width: 40px; /* Lo agrandamos un poquito */
 .item-carrito-desc h4 { margin:0; font-size: 1.1rem; }
 .item-carrito-desc p { margin:0; font-size: 1.0rem; color: #3051Ad; font-weight: bold; }
 .btn-eliminar-item { background: none; border: none; cursor: pointer; font-size: 1.1rem; }
+
+
+/* Listado de Opciones */
+.menu-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+.opcion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 14px 18px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: transform 0.1s;
+}
+.opcion-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}/* Ajuste de tamaño y estilo del texto dentro de la opción */
+.opcion-izquierda span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
